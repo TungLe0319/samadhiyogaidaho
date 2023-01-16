@@ -1,5 +1,6 @@
 import BaseController from '../utils/BaseController'
 import { Auth0Provider } from '@bcwdev/auth0provider'
+import sse from 'sse-express'
 
 export class ValuesController extends BaseController {
   constructor() {
@@ -13,6 +14,7 @@ export class ValuesController extends BaseController {
 
   async getAll(req, res, next) {
     try {
+    
       return res.send(['value1', 'value2'])
     } catch (error) {
       next(error)
