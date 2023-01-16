@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@bcwdev/auth0provider-client": "0.0.13",
+    "@builder.io/partytown": "^0.7.4",
     "@mdi/font": "7.0.96",
     "@popperjs/core": "2.11.6",
     "@tiptap/starter-kit": "^2.0.0-beta.209",
@@ -20,7 +21,7 @@
     "compressorjs": "^1.1.1",
     "pocketbase": "^0.9.0",
     "socket.io-client": "4.5.2",
-    "sweetalert2": "11.4.34",
+    "sweetalert2": "^11.4.8",
     "swiper": "^8.4.5",
     "tsparticles": "^2.6.0",
     "vue": "3.2.39",
