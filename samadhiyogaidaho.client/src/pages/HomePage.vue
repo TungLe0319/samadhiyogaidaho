@@ -82,10 +82,13 @@ import { computed } from "@vue/reactivity";
 
 import LoadingComponent from "../components/LoadingComponent.vue";
 import { AppState } from "../AppState.js";
+import { testimonialsService } from "../services/TestimonialsService.js";
 export default {
   setup() {
     onMounted(() => {
       getYogaSchedules();
+      getTestimonials()
+
     });
     let rest = true;
     async function getYogaSchedules() {
@@ -94,6 +97,13 @@ export default {
       } catch (error) {
         Pop.error(error, "[getYogaSchedules]");
       }
+    }
+      async function getTestimonials(){
+      try {
+          await testimonialsService.getTestimonials()
+        } catch (error) {
+          Pop.error(error,'[getTestimonials]')
+        }
     }
 
     return {

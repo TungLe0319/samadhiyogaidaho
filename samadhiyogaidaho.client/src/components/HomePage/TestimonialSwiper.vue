@@ -1,6 +1,6 @@
 <template>
   <swiper
-  
+
   :autoplay="{
       delay: 5000,
       disableOnInteraction: false,
@@ -8,7 +8,7 @@
   :grabCursor="true"
     :pagination="true" :modules="modules" class="mySwiper fluid bg-transparent"
     v-motion-pop-visible-once
-   
+
   >
     <swiper-slide v-for="t in testimonials" class="fluid">
       <div class="testimonial-card card bg-transparent border-0 position-relative  ">
@@ -21,10 +21,10 @@
               alt=""
               class="elevation-6 img-fluid forcedImg d-none d-md-block"
             />
-      
+
           </div>
 
-       
+
           <div
             class="  text-center px-5 pb-3 d-flex flex-column align-items-center justify-content-center "
           >
@@ -34,7 +34,7 @@
               class="mdi mdi-star stars text-warning text-shadow"
               v-for="i in t.rating"
             ></i>
-            
+
           </div>
             <p class="text-center testimonial-text ">
               <i class="mdi mdi-format-quote-open text-dark fs-3"></i>
@@ -78,15 +78,9 @@ export default {
   },
   setup() {
     onMounted(()=>{
-      getTestimonials()
+   
     })
-    async function getTestimonials(){
-      try {
-          await testimonialsService.getTestimonials()
-        } catch (error) {
-          Pop.error(error,'[getTestimonials]')
-        }
-    }
+
     return {
       testimonials:computed(() => AppState.testimonials),
       modules: [EffectCoverflow, Pagination, EffectCreative, Navigation,Autoplay],
