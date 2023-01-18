@@ -208,7 +208,7 @@
             </div>
           </div>
           <div class="row gy-3">
-            <div class="col-md-6 d-flex justify-content-center">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
               <img
                  v-motion-slide-visible-once-bottom
           :delay="300"
@@ -232,7 +232,7 @@
                   {{ retreat?.schedule?.description }}
                 </p>
               </div>
-         
+
             </div>
           </div>
         </div>
@@ -580,6 +580,13 @@ export default {
   @media only screen and (max-width: 768px) {
     width: 75%;
     height: 75%;
+  }
+
+  //when screen is 768px OR LESS
+  @media only screen and (max-height: 768px){
+
+  width: 60%;
+    height: 90%;
   }
   //when screen is 768px OR LESS
 
