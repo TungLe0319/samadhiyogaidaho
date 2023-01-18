@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button
+    <a
       class="wtrvl-checkout_button btn font-2 fs-3 bg-dark fw-bold"
       @click="test"
       id="wetravel_button_widget"
@@ -18,7 +18,7 @@
       "
     >
       Book Now
-    </button>
+    </a>
   </div>
 </template>
 <script>
