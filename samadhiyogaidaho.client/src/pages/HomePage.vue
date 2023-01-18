@@ -36,7 +36,7 @@
             </div>
           </div>
         </div>
-        
+
     </section>
 
     <section id="Call-To-Action-Section" class="my-5">
@@ -79,7 +79,7 @@ import { onMounted } from "vue";
 import InstagramFeed from "../components/HomePage/InstagramFeed.vue";
 import { scheduleService } from "../services/ScheduleService.js";
 import { computed } from "@vue/reactivity";
-import { pocketBaseService } from "../services/PocketBaseService.js";
+
 import LoadingComponent from "../components/LoadingComponent.vue";
 import { AppState } from "../AppState.js";
 export default {
@@ -150,7 +150,7 @@ export default {
   //when screen is 768px OR LESS
    @media only screen and (max-width: 768px){
  background-attachment: scroll;
- 
+
   }
 }
 
