@@ -1,4 +1,4 @@
-import { pb } from "../PocketBase.js";
+import {pb} from "../../PocketBase.js"
 import { AppState } from "../AppState";
 import { generateId } from "../utils/Helper";
 import { logger } from "../utils/Logger";
