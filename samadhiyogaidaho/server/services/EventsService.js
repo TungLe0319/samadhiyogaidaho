@@ -1,4 +1,3 @@
-import { Value } from "sass";
 import { dbContext } from "../db/DbContext";
 import { BadRequest, Forbidden } from "../utils/Errors";
 import { update } from "../utils/Functions";
@@ -15,7 +14,7 @@ class EventsService {
     // @ts-ignore
     await event.remove();
     return event;
-    // 
+    //
   }
   async createEvent(eventData, userId) {
     await getAdmins(userId);
@@ -32,10 +31,10 @@ class EventsService {
     return event;
   }
   async updateEvent(eventId, eventData, userId) {
- 
+
     await getAdmins(userId);
     let event = await this.getEventById(eventId);
-   
+
     await update(eventData, event);
     await event.save();
     return event
