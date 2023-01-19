@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid schedule-section my-5">
-    <div class="row position-relative" >
+    <div class="row position-relative justify-content-evenly" >
       <div class="col-md-12 text-center">
         <h1
           v-motion-slide-visible-once-bottom
@@ -12,7 +12,7 @@
         <br />
       </div>
 
-      <div class="col-md-8 d-flex align-items-center justify-content-center">
+      <!-- <div class="col-md-8 d-flex align-items-center justify-content-center">
         <div
           v-motion-slide-visible-once-bottom
           :delay="300"
@@ -26,11 +26,11 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
       <div
-        class="col-md-6 schedule-card rounded elevation-6 bg-white d-flex flex-column align-content-center justify-content-center"
+        class="col-md-5 rounded elevation-6 bg-white d-flex  align-content-center justify-content-center"  v-for="s in schedules"
       >
-        <ScheduleCard :schedule="s" v-for="s in schedules" />
+        <ScheduleCard :schedule="s" />
       </div>
     </div>
   </div>

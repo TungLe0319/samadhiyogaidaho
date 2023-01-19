@@ -2,9 +2,12 @@
   <div
     v-motion-slide-visible-once-bottom
     :delay="300"
-    class="mt-4 text-center "
+    class="text-center pb-4 "
   >
-    <p class="underline fs-2 font-1 border-2 border-bottom text-pink darken-20">
+<img src="../../assets/img/yogaperson2.png" alt="" class="img-fluid w-50">
+
+  <div class="card-body">
+   <p class="underline fs-2 font-1 border-2 border-bottom text-pink darken-20">
       {{ schedule.title }}
     </p>
 
@@ -27,6 +30,8 @@
         </div>
       </div>
     </div>
+  </div>
+
   </div>
 </template>
 

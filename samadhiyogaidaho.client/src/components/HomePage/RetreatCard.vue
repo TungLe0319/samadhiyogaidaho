@@ -4,7 +4,7 @@
           :delay="300"
     class="card elevation-6 text-white text-shadow font-2 border-0 text-uppercase rounded-4"
   >
-    <div class="image-box">
+    <div class="image-box rounded-4">
       <img
         class="card-img rounded-4"
         :src="retreat.coverImg"

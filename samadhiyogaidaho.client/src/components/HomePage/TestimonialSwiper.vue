@@ -108,8 +108,8 @@ export default {
   }
 }
 .forcedImg {
-  height: 275px;
-  width: 175px;
+  height: 200px;
+  width: 130px;
 
   object-fit: cover;
 }
