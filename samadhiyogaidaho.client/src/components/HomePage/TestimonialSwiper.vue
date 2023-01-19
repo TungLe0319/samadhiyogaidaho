@@ -17,9 +17,9 @@
             class="justify-content-center d-flex flex-column align-items-center mt-5"
           >
             <img
-              src="https://images.unsplash.com/photo-1542596768-5d1d21f1cf98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              src="../../assets/img/logo.png"
               alt=""
-              class="elevation-6 img-fluid forcedImg d-none d-md-block"
+              class="elevation-6 img-fluid forcedImg d-none d-md-block rounded-pill"
             />
 
           </div>
@@ -78,7 +78,7 @@ export default {
   },
   setup() {
     onMounted(()=>{
-   
+
     })
 
     return {
@@ -108,9 +108,9 @@ export default {
   }
 }
 .forcedImg {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+  height: 275px;
+  width: 175px;
+
   object-fit: cover;
 }
 </style>
