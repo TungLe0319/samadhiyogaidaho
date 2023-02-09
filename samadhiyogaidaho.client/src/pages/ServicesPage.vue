@@ -27,11 +27,11 @@
                   Enrich your life and deepen your practice
                 </h4>
               </div>
-          
+
             </div>
           </div>
         </div>
-        
+
     </section>
 
     <!-- <section>
@@ -102,7 +102,7 @@
     </div>
   </section> -->
     <section class="container mt-5 ">
-   
+
         <div class="row my-5">
           <div class="col-md-12 text-center">
             <p
@@ -191,12 +191,15 @@
               </div>
               <div class="d-flex justify-content-center">
                 <button
+                 data-bs-toggle="modal"
+                data-bs-target="#privateEvent"
                   v-motion-slide-visible-once-bottom
                   :delay="300"
                   class="btn btn-dark fs-4 font-2"
                 >
                   Start booking your private event here
                 </button>
+
               </div>
             </div>
           </div>
@@ -245,6 +248,8 @@
               </div>
               <div class="d-flex justify-content-center">
                 <button
+                  data-bs-toggle="modal"
+                data-bs-target="#privateLesson"
                   v-motion-slide-visible-once-bottom
                   :delay="300"
                   class="btn btn-dark fs-4 font-2"
@@ -266,7 +271,7 @@
             </div>
           </div>
         </div>
-     
+
     </section>
 
     <section id="Video-Section">
@@ -300,7 +305,7 @@ export default {
   background-attachment: fixed;
      @media only screen and (max-width: 768px){
  background-attachment: scroll;
- 
+
   }
 }
 

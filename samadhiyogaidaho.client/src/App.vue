@@ -3,13 +3,20 @@
     <Navbar class="d-none fixed-top d-md-flex" id="nav" v-if="!routeAdmin" />
   </header>
   <main>
-    <router-view   />
+    <router-view />
   </main>
   <Navbar class="d-block fixed-bottom d-md-none" id="nav" v-if="!routeAdmin" />
 
   <ModalComponent id="activeImage">
     <ActiveImage />
   </ModalComponent>
+
+  <ModalComponent id="privateEvent">
+    <PrivateEventModal />
+  </ModalComponent>
+  <ModalComponent id="privateLesson">
+    <PrivateLessonModal/>
+   </ModalComponent>
   <Footer v-if="!routeAdmin" />
 </template>
 
@@ -24,16 +31,18 @@ import ModalComponent from "./components/MiscComponents/ModalComponent.vue";
 import { logger } from "./utils/Logger";
 import { retreatsService } from "./services/RetreatsService.js";
 import Pop from "./utils/Pop";
+import PrivateEventModal from "./components/ServicesPage/PrivateEventModal.vue";
+import PrivateLessonModal from "./components/ServicesPage/PrivateLessonModal.vue";
 
 export default {
   setup() {
     onMounted(() => {
       hideOnScrollTest();
-      getRetreats()
+      getRetreats();
     });
     async function getRetreats() {
       try {
-        await retreatsService.getAllRetreats()
+        await retreatsService.getAllRetreats();
       } catch (error) {
         Pop.error(error, "[getRetreats]");
       }
@@ -68,7 +77,14 @@ export default {
       appState: computed(() => AppState),
     };
   },
-  components: { Navbar, Footer, ModalComponent, ActiveImage },
+  components: {
+    Navbar,
+    Footer,
+    ModalComponent,
+    ActiveImage,
+    PrivateEventModal,
+    PrivateLessonModal
+},
 };
 </script>
 <style lang="scss">
