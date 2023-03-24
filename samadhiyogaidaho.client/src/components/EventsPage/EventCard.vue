@@ -13,12 +13,15 @@
       >
         {{ event.title }}
       </p>
+
       <div class="d-md-flex">
         <div class="me-3">
           <p class="text-start">
-            {{ getDate(event.startDate) }} - {{ getDateTime(event.endDate) }}
-          </p>
 
+
+          </p>
+          {{ getDate(event.startDate) }} 
+<!-- {{ getDateTime(event.endDate) }} -->
           <span class="font-2 mb-0 d-flex align-items-center">
             {{ event.location }}</span
           >
