@@ -96,7 +96,7 @@
               class="text-center fs-3"
             >
               <a href="tel:208-670-4139" class="text-dark font-2 email-phone">
-                <i class="mdi mdi-phone fs-3"></i> 208-670-4139</a
+                <i class="mdi mdi-phone fs-3"></i> 208-996-0363</a
               >
             </p>
             <p

@@ -92,7 +92,7 @@
         >
         <br />
         <a href="tel:208-670-4139" class="text-dark font-2 email-phone"
-          >208-670-4139</a
+          >208-996-0363</a
         >
       </section>
       <!-- Section: Social -->
