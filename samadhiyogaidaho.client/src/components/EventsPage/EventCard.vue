@@ -26,7 +26,7 @@
             {{ event.location }}</span
           >
           <span class="font-2">
-            <!-- <a
+            <a
               :href="event.address"
               target="_blank"
               class="  "
@@ -35,7 +35,7 @@
               <i class="mdi   mdi-signature fs-3 text-pink darken-20">
                 Sign Up Link</i
               ></a
-            > -->
+            >
           </span>
         </div>
 

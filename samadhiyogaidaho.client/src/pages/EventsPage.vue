@@ -46,7 +46,7 @@
           >
 
           </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfR5I1tQbfue8ndMeTGIi15-DfSHUUL_iRLX-yJiChZGQTt0g/viewform" target="_blank" class="fs-4 text-pink darken-20"> Sign Up here!</a>
+          <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSfR5I1tQbfue8ndMeTGIi15-DfSHUUL_iRLX-yJiChZGQTt0g/viewform" target="_blank" class="fs-4 text-pink darken-20"> Sign Up here!</a> -->
         </div>
       </div>
     </div>
