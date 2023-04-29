@@ -1,6 +1,6 @@
 <template>
   <header>
-    <Navbar class="d-none fixed-top d-md-flex" id="nav" v-if="!routeAdmin" />
+    <Navbar class="d-none fixed-top d-md-flex"   v-if="!routeAdmin" />
   </header>
   <main>
     <router-view />

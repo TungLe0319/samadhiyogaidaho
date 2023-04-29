@@ -23,7 +23,7 @@
             >
               Enjoy an enriching and memorable experience
             </p>
-       
+
           </div>
         </div>
       </div>
@@ -40,12 +40,13 @@
             <br />
           </p>
           <p
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="fs-4 text-pink darken-20"
+
+
+            class=""
           >
-            Our pop up schedule for 2023 will be posted soon.
+
           </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfR5I1tQbfue8ndMeTGIi15-DfSHUUL_iRLX-yJiChZGQTt0g/viewform" target="_blank" class="fs-4 text-pink darken-20"> Sign Up here!</a>
         </div>
       </div>
     </div>
@@ -107,7 +108,7 @@ export default {
   background-attachment: fixed;
      @media only screen and (max-width: 768px){
  background-attachment: scroll;
- 
+
   }
 }
 </style>

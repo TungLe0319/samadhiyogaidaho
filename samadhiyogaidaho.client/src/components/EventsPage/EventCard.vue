@@ -20,22 +20,22 @@
 
 
           </p>
-          {{ getDate(event.startDate) }} 
+          {{ getDate(event.startDate) }}
 <!-- {{ getDateTime(event.endDate) }} -->
           <span class="font-2 mb-0 d-flex align-items-center">
             {{ event.location }}</span
           >
           <span class="font-2">
-            <a
+            <!-- <a
               :href="event.address"
               target="_blank"
               class="  "
               title="GoogleMaps Link"
             >
-              <i class="mdi mdi-map-marker fs-3 text-pink darken-20">
-                Map Link</i
+              <i class="mdi   mdi-signature fs-3 text-pink darken-20">
+                Sign Up Link</i
               ></a
-            >
+            > -->
           </span>
         </div>
 
@@ -51,7 +51,18 @@
           />
         </div>
       </div>
-      <p class="text-start">{{ event.description }}</p>
+      <!-- <p class="text-start">{{ event.description }}</p> -->
+   <p class="text-start mt-4">
+        Come join us for a unique experience of Hiking and Yoga! Enjoy the outdoors while getting in touch with your inner self.
+
+Dates and Locations:
+<ul>
+  <li>6th of May at Table Rock</li>
+  <li>June 3rd at Camels Back</li>
+  <li>July 15th at Military Reserve</li>
+  <li>August 12th at Boise River Greenbelt</li>
+</ul>
+      </p>
     </div>
   </div>
   <hr class="mt-4" />
