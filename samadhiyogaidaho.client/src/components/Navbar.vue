@@ -40,7 +40,7 @@
               About
             </router-link>
           </li>
-          <li>
+          <!-- <li>
             <router-link
               :to="{ name: 'Retreats' }"
               v-motion-slide-bottom
@@ -49,7 +49,7 @@
             >
               Retreats
             </router-link>
-          </li>
+          </li> -->
           <li>
             <router-link
               :to="{ name: 'Services' }"
@@ -183,13 +183,13 @@ export default {
 .navbar-nav{
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px){
-    
+
 li{
   justify-content: center;
   display: flex;
 }
- 
- 
+
+
   }
 }
 .navbar-nav .router-link-exact-active {
